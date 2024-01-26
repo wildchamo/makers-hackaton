@@ -38,7 +38,11 @@ function Chat() {
 
   return (
     <main className="maincontainer-chat">
+      
+      
+      
       <div className="floating-messages">
+      Spice the conversation with some of these IA suggestions:
         {Object.entries(messages.suggestions).map(([key, value], index) => (
           <button key={index}>
             <strong>{key}:</strong> {value}
