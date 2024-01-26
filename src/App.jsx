@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import "./App.css";
 import { ChatEngine, getOrCreateChat } from "react-chat-engine";
 
-
-
 function App() {
   const [username, setUsername] = useState("");
+
+  const [suggestions, setSuggestions] = useState(["hola", "jose", "como"]);
 
   function createDirectChat(creds) {
     getOrCreateChat(
@@ -31,6 +31,8 @@ function App() {
 
   return (
     <main>
+      {suggestions ? <button className="floating-text">holaa</button> : null}
+
       <ChatEngine
         height="100vh"
         padding="0"
@@ -38,7 +40,6 @@ function App() {
         userName={import.meta.env.VITE_REACT_APP_USERNAME}
         userSecret={import.meta.env.VITE_REACT_APP_USER_SECRET}
         renderNewChatForm={(creds) => renderChatForm(creds)}
- 
       />
     </main>
   );
