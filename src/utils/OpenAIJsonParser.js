@@ -6,6 +6,7 @@ const {
   StructuredOutputParser,
   OutputFixingParser,
 } = require("langchain/output_parsers");
+require('dotenv').config();
 
 
 async function OpenAIJsonParser(chatString, ConfigUser) {
@@ -21,7 +22,7 @@ async function OpenAIJsonParser(chatString, ConfigUser) {
   const chatModel = new OpenAI({
     modelName: "gpt-4-1106-preview", // Or gpt-3.5-turbo
     temperature: 0, // For best results with the output fixing parser
-    openAIApiKey:"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",
+    openAIApiKey: process.env.OPENAI_API_KEY,
   });
 
   const outputFixingParser = OutputFixingParser.fromLLM(chatModel, outputParser);

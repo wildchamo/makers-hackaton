@@ -16,7 +16,6 @@ MatchMaker es una aplicación de citas que utiliza inteligencia artificial para 
 - **Framework de Desarrollo Frontend**: React 
 - **Framework de Desarrollo Backend**: Express.js
 - **framework desarollo IA**: langchain (IA) 
-- **Base de Datos**: MongoDB
 
 ## Configuración del Proyecto
 
