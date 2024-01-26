@@ -5,7 +5,7 @@ function Home() {
   return (
     <main className="main-container">
       <div className="login-container">
-        <h2>Login</h2>
+        <h2>Connect Beyond Swipes </h2>
         <form className="login-form">
           <input type="text" placeholder="Username" required />
           <input type="password" placeholder="Password" required />

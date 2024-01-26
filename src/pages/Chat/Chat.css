@@ -1,10 +1,14 @@
 .floating-messages {
     position: absolute;
     z-index: 1000;
-    top: 98%;
-    right: 35%;
+    top:95%;
+    right: 30%;
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .maincontainer-chat{
+    margin-bottom: 50px;
   }

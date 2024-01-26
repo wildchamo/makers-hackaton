@@ -2,10 +2,18 @@ import { ChatEngine, getOrCreateChat } from "react-chat-engine";
 import { useState } from "react";
 import "./Chat.css";
 
-
 function Chat() {
   const [username, setUsername] = useState("");
-  const [messages, setMessages] = useState(["jose", "luis", "bedoya"]); // [
+  const [messages, setMessages] = useState({
+    suggestions: {
+      Mensaje1:
+        "¡Japón suena increíble! Me encantaría explorar esos paisajes contigo. ¿Qué te parece si planeamos una aventura juntos?",
+      Mensaje2:
+        "La temporada de Sakura debe ser mágica. Me imagino caminando bajo los cerezos en flor contigo, ¿te gustaría eso?",
+      Mensaje3:
+        "También soy un gran fan de los viajes. ¿Te gustaría que compartiéramos fotos de nuestros destinos soñados y ver si coincidimos en alguno?",
+    },
+  });
 
   function createDirectChat(creds) {
     getOrCreateChat(
@@ -29,10 +37,12 @@ function Chat() {
   }
 
   return (
-    <main>
+    <main className="maincontainer-chat">
       <div className="floating-messages">
-        {messages.map((message, index) => (
-          <button key={index}>{message}</button>
+        {Object.entries(messages.suggestions).map(([key, value], index) => (
+          <button key={index}>
+            <strong>{key}:</strong> {value}
+          </button>
         ))}
       </div>
 
