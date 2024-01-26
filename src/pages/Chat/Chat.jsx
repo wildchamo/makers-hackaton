@@ -37,6 +37,7 @@ function Chat() {
         renderNewChatForm={(creds) => renderChatForm(creds)}
 
       />
+        <h1>asd</h1>
     </main>
   );
 }
