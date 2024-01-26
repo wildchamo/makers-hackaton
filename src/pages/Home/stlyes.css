@@ -1,0 +1,46 @@
+.main-container {
+  height: 100vh;
+  display: grid;
+  place-items: center; 
+}
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  height: 320px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #4e4e4e;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.tinder {
+  background-color: #fe3c72; /* Color similar to Tinder's */
+}
+.passNEmail:hover{
+    background-color: #aaa7a7;
+}
+.tinder:hover {
+  background-color: #fd5d93;
+}

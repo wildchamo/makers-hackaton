@@ -10,7 +10,6 @@ const AppLayout = () => {
     return (
         <>
             <div className="App">
-                <Header/>
                 <Outlet/>
                 <Footer/>
             </div>
