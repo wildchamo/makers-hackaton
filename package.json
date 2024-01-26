@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-chat-engine": "^1.11.28",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "langchain": "^0.0.168"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
