@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./App.css";
 import { ChatEngine, getOrCreateChat } from "react-chat-engine";
 
+
+
 function App() {
   const [username, setUsername] = useState("");
 
@@ -28,14 +30,17 @@ function App() {
   }
 
   return (
-    <ChatEngine
-      height="100vh"
-      padding="0"
-      projectID={import.meta.env.VITE_REACT_APP_PROJECT_ID}
-      userName={import.meta.env.VITE_REACT_APP_USERNAME}
-      userSecret={import.meta.env.VITE_REACT_APP_USER_SECRET}
-      renderNewChatForm={(creds) => renderChatForm(creds)}
-    />
+    <main>
+      <ChatEngine
+        height="100vh"
+        padding="0"
+        projectID={import.meta.env.VITE_REACT_APP_PROJECT_ID}
+        userName={import.meta.env.VITE_REACT_APP_USERNAME}
+        userSecret={import.meta.env.VITE_REACT_APP_USER_SECRET}
+        renderNewChatForm={(creds) => renderChatForm(creds)}
+ 
+      />
+    </main>
   );
 }
 
